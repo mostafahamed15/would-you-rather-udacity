@@ -60,7 +60,8 @@ function mapStateToProps ({ users, authedUser }) {
   const sortedLeaders = (Object.values(users)).sort((a, b) => {
     const aRank = (Object.keys(a.answers)).length + a.questions.length
     const bRank = (Object.keys(b.answers)).length + b.questions.length
-    return bRank >= aRank
+
+    return bRank - aRank
   })
   return {
     authedUser,

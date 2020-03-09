@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import { Well, Glyphicon } from 'react-bootstrap'
 import QuestionAnswering from './QuestionAnswering'
